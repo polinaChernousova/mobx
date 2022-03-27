@@ -15,7 +15,7 @@ class Todos extends Component {
             onSubmit={(e) => {
               e.preventDefault();
               todoStore.addTodo(this.todo.current.value);
-              this.todo.current.value = "";
+              this.current.value = "";
               // ! создали ref чтобы взять значения из value, и переотобразить экземпляр смонтированного компонента
 
               //! ref говорит переназначения(edit) в инпуте смотри, но те значения которые инпут получит первыми не будут наблюдаемы
